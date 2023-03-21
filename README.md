@@ -8,8 +8,8 @@
 
 <h5> about our app</h5>
 
-<p> we did'nt decid about an a idea yet we gona keep going withe the phases tell
-we came with an idea ind add it </p>
+<p> we haven't decided about an idea yet we are going to keep working on the phases till
+we come up with one </p>
 
 <h5> how to run it </h5>
-<p> saimply run it with vsc or browser </P>
+<p> simply run it with VScode or Browser </P>
