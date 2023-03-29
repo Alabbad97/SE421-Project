@@ -2,4 +2,31 @@
 
 <h1>mobiles page</h1>
 <p>this page contains all mbile's data from <code>mobile-data.js</code> </p>
+<!-- mobiles.html -->
+<div id="mobiles"></div>
+
+<script>
+$(document).ready(function() {
+  $.ajax({
+    url: 'data.json',
+    dataType: 'json',
+    success: function(data) {
+      // process JSON data and display on page
+      var mobilesDiv = $('#mobiles');
+      $.each(data, function(index, item) {
+        var mobileHtml = '<div class="mobile">' +
+          '<h2>' + item.name + '</h2>' +
+          '<img src="' + item.image + '">' +
+          '<p>' + item.description + '</p>' +
+          '<p>Price: ' + item.price + '</p>' +
+          '</div>';
+        mobilesDiv.append(mobileHtml);
+      });
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      console.error('Error loading JSON data: ' + textStatus + ', ' + errorThrown);
+    }
+  });
+});
+</script>
 

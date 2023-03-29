@@ -1,12 +1,42 @@
-
-
-<h1>
-  Reqres-data Page
-</h1>
-
 <p>
-  Generated HTML by javascript)
+  Generated HTML by javascript
   JS "for loop" is used to show all data using bootstrap elements.
   data should be retrieved from 
   <a href="https://reqres.in/api/users">https://reqres.in/api/users</a>
 </p>
+<!-- recqres-data.html -->
+<body>
+  <h1>Requested Resources</h1>
+  <div id="results"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $.ajax({
+        url: "https://example.com/api/resources",
+        method: "GET",
+        dataType: "json",
+        success: function(response) {
+          var results = $("#results");
+
+          // Create a table to display the data
+          var table = $("<table>");
+          table.append("<thead><tr><th>ID</th><th>Name</th><th>Description</th></tr></thead>");
+          var tbody = $("<tbody>");
+          response.forEach(function(resource) {
+            var row = $("<tr>");
+            row.append("<td>" + resource.id + "</td>");
+            row.append("<td>" + resource.name + "</td>");
+            row.append("<td>" + resource.description + "</td>");
+            tbody.append(row);
+          });
+          table.append(tbody);
+          results.append(table);
+        },
+        error: function(xhr) {
+          $("#results").html("Failed to retrieve data");
+        }
+      });
+    });
+  </script>
+</body>
