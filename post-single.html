@@ -2,3 +2,4 @@
 
 <h1>all post</h1>
 <p>bring single post data using Jinja code. Data should be retrieved from postdata.py</p>
+@app.route("/post/<int:post_id>")def post(post_id):if post_id < len(posts):p = posts[post_id]return render_template('post.html',title= f"Post #{post_id}", p=p )else:return render_template('404.html'), 404
