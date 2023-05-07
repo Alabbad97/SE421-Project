@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: #0072ce;
+}
+
+.cta-btn {
+  border-radius: 50px;
+  background-color: #363636;
+  color: #fff;
+  padding: 6px 18px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  border: 2px solid #363636;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 90px 0;
+  color: #1f1f1f;
+}
+
+.col-1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.col-1 h1 {
+  font-size: 48px;
+}
+
+.col-1 h3 {
+  font-size: 39px;
+  font-weight: 300;
+  margin: 20px 0 10px;
+}
+
+.col-1 p {
+  font-size: 16px;
+}
+
+.col-1 h4 {
+  margin: 25px 0;
+}
+
+.col-1 .hero-btn {
+  background: #d53b00;
+  color: #fff;
+  border: none;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.25em;
+  height: 2.5rem;
+  transition: background 0.5s;
+  font-weight: 500;
+}
+
+.col-1 .hero-btn:hover {
+  background: #c63700;
+}
+
+.col-2 {
+  position: relative;
+  display: flex;
+  flex-basis: 40%;
+  align-items: center;
+}
+
+.col-2 video {
+  max-width: 500px;
+}
