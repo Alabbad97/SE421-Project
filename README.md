@@ -1,15 +1,14 @@
 # SE421-Project
- <h1>team member names</h1>
+ <h1>Team Members</h1>
 
-<p>-عبدالوهاب 
+<p>-عبدالوهاب العباد 
 -فراس باوزير-
-خوتنلي-
+عبدالرحمن خوتنلي-
 -مصعب احمد</p>
 
-<h5> about our app</h5>
+<h5> About our app</h5>
 
-<p> we haven't decided about an idea yet we are going to keep working on the phases till
-we come up with one </p>
+<p> Our application is simply selling Playstation 5 Dualshock, it's pretty simple for now but we are looking to expand it in the near future to be able to sell all kinds of games and accessories </p>
 
 <h5> how to run it </h5>
 <p> simply run it with VScode or Browser </P>
