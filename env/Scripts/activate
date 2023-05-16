@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\frosi\OneDrive\Desktop\project\SE421-Project\env"
+VIRTUAL_ENV="C:\Users\Admin\Desktop\SE421-Project\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
